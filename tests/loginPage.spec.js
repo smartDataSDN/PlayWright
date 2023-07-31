@@ -42,13 +42,13 @@ test.describe('Login page', () => {
         await expect(await page.locator('#error')).toHaveText('Your username is invalid!');
     })
 
-    test('Verify a user can not login with an invalid username and an invalid password.', async () => {
+    test('Verify a user can"\'t" login with an invalid username and an invalid password.', async () => {
         await login.login('studentd', 'Password123f')
         await login.submit();
         await expect(await page.locator('#error')).toHaveText('Your username is invalid!');
     })
 
-    test('Verify a user can not login with a invalid username and valid password.', async () => {
+    test('Verify a user can"\'t" login with a invalid username and valid password.', async () => {
         await login.login('studentd', 'Password123')
         await login.submit();
         await expect(await page.locator('#error')).toHaveText('Your username is invalid!');
