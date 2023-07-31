@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import LoginPage from './Pages/LoginPage';
+import LoginPage from './pages/LoginPage.js';
 
 let page;
 let login;
